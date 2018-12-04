@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    overflow: hidden;
+    font-family: Lato;
+}
+
+.stats {
+    text-align: left;
+    position: absolute;
+    top: 40px;
+    font-weight: bold;
+}
+
+.level-info {
+    position: absolute;
+    margin: auto;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    padding: 0 30px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: beige;
+}
