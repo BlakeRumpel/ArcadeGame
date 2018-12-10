@@ -34,3 +34,8 @@ gulp.task('js', () => {
         .pipe(gulp.dest('dist/js'));
     }
 );
+
+gulp.task('html', () => {
+    return gulp.src('src/*.html')
+        .pipe(gulp.dest('dist'));
+});
