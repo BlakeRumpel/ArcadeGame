@@ -1,0 +1,22 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlakeSD2019/ArcadeGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlakeSD2019/ArcadeGame/issues"
+  },
+  "homepage": "https://github.com/BlakeSD2019/ArcadeGame#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
