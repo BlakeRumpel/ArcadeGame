@@ -4,6 +4,7 @@ const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 gulp.task('css', () => {
     gulp.src('src/css/**/*.css')
@@ -29,6 +30,7 @@ gulp.task('js', () => {
             presets: ['@babel/env']
         }))
         .pipe(concat('main.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
     }
 );
