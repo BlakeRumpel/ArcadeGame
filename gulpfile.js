@@ -6,6 +6,8 @@ const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
+gulp.task('default', ['css', 'img', 'js', 'html', 'watch'], () => {}) ;
+
 gulp.task('css', () => {
     gulp.src('src/css/**/*.css')
         .pipe(autoprefixer({
@@ -43,5 +45,5 @@ gulp.task('html', () => {
 gulp.task('watch', () => {
     gulp.watch('src/css/**/*.css', ['css']);
     gulp.watch('src/js/**/*.js', ['js']);
-    gulp.watch('src/*.html' ['html']);
+    gulp.watch('src/*.html', ['html']);
 });
