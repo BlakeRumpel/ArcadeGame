@@ -39,3 +39,9 @@ gulp.task('html', () => {
     return gulp.src('src/*.html')
         .pipe(gulp.dest('dist'));
 });
+
+gulp.task('watch', () => {
+    gulp.watch('src/css/**/*.css', ['css']);
+    gulp.watch('src/js/**/*.js', ['js']);
+    gulp.watch('src/*.html' ['html']);
+});
