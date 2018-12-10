@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
+const babel = require('gulp-babel');
 
 gulp.task('css', () => {
     gulp.src('src/css/**/*.css')
@@ -10,13 +11,22 @@ gulp.task('css', () => {
             cascade: false
         }))
         .pipe(cleanCSS({ compatibility: 'ie8' }))
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('dist/css'));
     }
 );
 
 gulp.task('img', () => {
     gulp.src('src/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/images'));
+    }
+);
+
+gulp.task('js', () => {
+    return gulp.src('src/js/**/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('dist/js'));
     }
 );

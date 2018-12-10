@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/BlakeSD2019/ArcadeGame#readme",
   "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-imagemin": "^5.0.3"
   }
